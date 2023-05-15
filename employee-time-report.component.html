@@ -1,0 +1,25 @@
+<h1>Employee Time Report</h1>
+
+<table class="table" *ngIf="employees">
+  <thead>
+    <tr>
+      <th>Employee Name</th>
+      <th>Total Time Worked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees" [ngClass]="{'red-row': calculateTimeDifference(employee) < 100}">
+
+      <td>{{ employee.EmployeeName }}</td>
+      <td>{{ formatTime(calculateTimeDifference(employee)) }}</td>
+      <!-- <td>{{ formatTime(employee.EndTimeUtc) }}</td> -->
+    </tr>
+  </tbody>
+</table>
+<p *ngIf="!employees">not found</p>
+
+<div>
+  <!-- <canvas id="pieChart" [chart]="chartData" [options]="chartOptions"></canvas> -->
+</div>
+
+
