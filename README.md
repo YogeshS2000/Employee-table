@@ -1,30 +1,16 @@
-# EmployeesTable2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+I have used Angular15.
 
-## Development server
+steps followed
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1.Created an service class to get the data from the API through observable.
+2.Used the data from service file to component.ts and added the sorting logic to it.
+3.Feeded the data to the html tables.
 
-## Code scaffolding
+I have tryed to create the pie chart but due to some installation error of chart.js and other libraries and lack of time, I left that and commented out the pie chart code.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+NOTE: Due to the inappropriate data (eg: Tim Perkinson start time: 2022-02-02 14:00  end time:2022-02-02 11:20) the total time is calculated as negative time. 
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 ![image](https://github.com/YogeshS2000/Employee-table/assets/126409939/ab7b0810-3c52-42c2-b5af-c8db1520c736)
 
 output img:
